@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #191826;
+    background-image: url("assets/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top -200px right -200px;
+}   
+
+nav {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem; 
+}
+
+nav>img {
+    width:10em;
+}
+
+header {
+    width:85%;
+    margin:0 auto;
+}
+
+.header-title {
+    font-weight:bold;
+    font-size: clamp(2.5rem, 1rem + 2.5vw, 5rem); 
+}
+
+.header-copy {
+    font-weight: regular;
+    font-size: clamp(1rem, 1.1rem, 1.5rem); 
+    line-height: 1.5em;
+    margin-top: 25px;
+}
+
+section {
+    width:100%;
+    background-color: #191826;
+    background-image: url("assets/bg-pattern-2.svg");
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: top center;
+    border-radius: 12px;
+    margin-top:13rem;
+    text-align: center;
+    position:relative;
+}
+
+
+.app {
+    width: 16rem;
+    margin-top: -8rem;
+}
+
+.download-window {
+    background-color: #FA7453;
+    color: white;
+    border-radius: 12px;
+    margin-top:3rem;
+    padding:2rem;
+    text-align:left;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: clamp(2rem, 2.5vw, 3rem); 
+    margin-top:0.5em;
+}
+
+.description {
+    font-size: clamp(1rem, 1vw, 1.5rem); 
+    line-height: 1.5em;
+    margin: 1em 0 2em 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 3rem;
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom:2rem;
+}
+
+.price>span {
+    font-weight:400;
+    font-size: 1rem;
+}
+
+.apple, .android {
+    display: block;
+    text-align: center;
+    padding: 1.5em 3em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 1rem 0;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 200ms;
+}
+
+.apple {
+    background-color: black;
+    color: white;
+}
+
+.apple:hover {
+    background-color: #66E2DC;
+}
+
+.android {
+    background-color: white;
+    color: black;
+}
+
+.android:hover {
+    background-color: #FFB964;
+}
+
+footer {
+    width:85%;
+    margin:4rem auto;
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer>img {
+    max-width:10em;
+}
+
+.information {
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.contact {
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.contact>span {
+    font-weight: bold;
+}
+
+.social {
+    display:flex;
+    gap:1em;
+    align-items: center;
+}
+
+
+.facebook {
+    background:url("assets/icon-facebook.svg");
+}
+
+.instagram {
+    background:url("assets/icon-instagram.svg");
+}
+
+.twitter {
+    background:url("assets/icon-twitter.svg");
+}
+
+.facebook, .instagram, .twitter {
+    width:1.2em;
+    height:1.2em;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    transition: 200ms;
+}
+
+
+.facebook:hover {
+    background:url("assets/icon-facebook-hover.svg");
+}
+
+.instagram:hover {
+    background:url("assets/icon-instagram-hover.svg");
+}
+
+.twitter:hover {
+    background:url("assets/icon-twitter-hover.svg");
+}
+
+.facebook:hover, .instagram:hover, .twitter:hover {
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+@media screen and (min-width:768px) {
+    html {
+        background-image: url("assets/bg-main-tablet.png");
+        background-position: top -300px left -350px;
+    }
+
+    body {
+        background-image: url("assets/bg-pattern-1.svg");
+        background-repeat: no-repeat;
+        background-position: top -100px right -50px;
+        background-size: 18rem;
+    }
+
+    .hero-text {
+        width: 60%;
+    }
+
+    section {
+        width: 85%;
+        margin-left: auto;
+        margin-right:auto;
+        text-align: left;
+        background-size: 45%;
+        height:42rem;
+        margin-bottom: 8rem;
+    }
+
+    .app {
+        margin-left:18%;
+    }
+
+    .download-window {
+        width:40%;
+        position:absolute;
+        top: 10rem;
+        left:18rem;
+    }
+
+    .information {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact {
+        width:50%;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    html {
+        background-image: url("assets/bg-main-desktop.png");
+    }
+
+    body {
+        background-position: top -30px right 0;
+    }
+    
+    nav, header, section, footer {
+        width:100%;
+        max-width: 1200px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    header {
+        padding:0;
+    }
+
+    section {
+        height:38rem;
+        background-size: 30%;
+    }
+
+    .app {
+        margin-left:8%;
+    }
+
+    .download-window {
+        width:30%;
+        top:5rem;
+        left:40rem;
+    }
+
+
+}
